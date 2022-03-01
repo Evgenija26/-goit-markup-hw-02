@@ -1,4 +1,3 @@
-
 .body{
     position: relative;
     width: 1600px;
@@ -8,16 +7,8 @@
 }
 
 /* Header*/
+
 .top-line-list{
-    font-family: Roboto;
-    font-weight: 500;
-    font-size: 14px;
-
-    color: #212121;
-    text-decoration: none;
-}
-
-.top-line-item{
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
@@ -28,13 +19,34 @@
     color: #212121;
 }
 
+.top-line-list2{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    
+    color: #757575;
+}
+
+.top-line-list2 :hover{
+    color: #2196F3;
+}
+
 .hero{
     background-color: 
     #2F303A;
 }
 
 .hero-title{
-    color: white;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    
+    color: #FFFFFF;
 }
 .hero-button{
 
@@ -47,6 +59,7 @@
     border-radius: 4px;
     
 
+    color: #FFFFFF;
 }
  
 /* About us*/
@@ -119,12 +132,10 @@
 
 .logo{
     font-family: Raleway;
-    font-style: normal;
-    font-weight: bold;
     font-size: 26px;
     line-height: 1.19;
-    letter-spacing: 0.03em;
-
+    
+    color: #212121;
 }
 .web{
     color: #2196F3;
@@ -156,7 +167,6 @@
     font-size: 16px;
     line-height: 1.62;
 
-    letter-spacing: 0.03em;
     color: #212121;
 }
 .projects-desc{
