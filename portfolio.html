@@ -9,20 +9,19 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
         <style>
-            a{ text-decoration: none; }
-            a:hover {color:#2196F3 ;}
+            a{ text-decoration: none;}
+            a:hover {color:#2196F3;}
             a {color: #212121;}
             a[title] {color: #757575;}
-         li {
-            list-style-type: none;
-           }
+            a[color] {color: rgba(255, 255, 255, 0.6)}
+            li {list-style-type: none;}
         </style>
     </head>
     <body class="body-portfolio">
         <header class="top-line">
-            <div class="top-line-rjynfiner">
+            <div class="top-line-container">
                 <nav class="nav">
-                    <a href="WebStudio" class="logo"><span class="web">Web</span>Studio</a>
+                    <a href="WebStudio" class="logo logo-top-line"><span class="web">Web</span>Studio</a>
                     <div class="top-line-list-container">
                         <ul class="top-line-list">
                             <li class="top-line-item"><a href="./index.html">Студия</a></li>
@@ -44,11 +43,11 @@
                 <div class="portfolio-container">
                     <!-- Portfolio-->
                     <ul class="portfolio-list">
-                        <li class="portfolio-item"><button>Все</button></li>
-                        <li class="portfolio-item"><button>Веб-сайты</button></li>
-                        <li class="portfolio-item"><button>Приложения</button></li>
-                        <li class="portfolio-item"><button>Дизайн</button></li>
-                        <li class="portfolio-item"><button>Маркетинг</button></li>
+                        <li><button class="portfolio-item">Все</button></li>
+                        <li><button class="portfolio-item">Веб-сайты</button></li>
+                        <li><button class="portfolio-item">Приложения</button></li>
+                        <li><button class="portfolio-item">Дизайн</button></li>
+                        <li><button class="portfolio-item">Маркетинг</button></li>
                     </ul>
                 </div>
                 <div class="projects-container">
@@ -88,12 +87,12 @@
         <footer class="footer">
             <div class="footer-container">
                 <!-- WebStudio -->
-                <a href="WebStudio" class="logo"><samp class="web">Web</samp>Studio</a>
+                <a href="WebStudio" class="logo-footer"><samp class="web">Web</samp>Studio</a>
                 <address class="address">г. Киев, пр-т Леси Украинки, 26</address>
                 <div class="footer-list-container">
                     <ul class="footer-list">
-                        <li class="footer-item"><a href="mailto:info@devstudio.com" title="info@devstudio.com">info@devstudio.com</a></li>
-                        <li class="footer-item"><a href="tel:+380961111111" title="+380961111111">+380961111111</a></li>
+                        <li class="footer-item"><a href="mailto:info@devstudio.com" color="info@devstudio.com">info@devstudio.com</a></li>
+                        <li class="footer-item"><a href="tel:+380961111111" color="+380961111111">+380961111111</a></li>
                     </ul>
                 </div>
             </div>

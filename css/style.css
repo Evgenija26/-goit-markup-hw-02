@@ -8,7 +8,57 @@
 
 /* Header*/
 
+.top-line-container{
+    align-items: center;
+    display: flex;
+    width: 1600px;
+    height: 80px;
+    left: 0px;
+    top: 0px;
+
+    background: #FFFFFF;
+}
+
+.nav{
+    display: flex;
+}
+
+.logo-top-line{
+    margin-left: 215px;
+}
+
+.logo{
+
+    width: 145px;
+    height: 31px;
+    left: 215px;
+    top: 24px;
+    font-family: Raleway;
+    font-size: 26px;
+    line-height: 1.19;
+    
+    color: #212121;
+}
+
+.logo-footer{
+    color: #FFFFFF;
+}
+.web{
+    color: #2196F3;
+}
+
+.top-line-list-container{ 
+    display: flex;
+    width: 294px;
+    height: 16px;
+    left: 453px;
+    top: 32px;
+
+}
+
 .top-line-list{
+    margin-right: 50px;
+    display: flex;
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
@@ -20,6 +70,7 @@
 }
 
 .top-line-list2{
+    display: flex;
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
@@ -45,20 +96,23 @@
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
+    display: block;
     
     color: #FFFFFF;
 }
 .hero-button{
-
-    width: 200px;
-    height: 50px;
-    left: 700px;
-    top: 430px;
-    background: #2196F3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
     
-
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    background-color: #2196F3;
+    
     color: #FFFFFF;
 }
  
@@ -130,16 +184,7 @@
     color: #757575;
 }
 
-.logo{
-    font-family: Raleway;
-    font-size: 26px;
-    line-height: 1.19;
-    
-    color: #212121;
-}
-.web{
-    color: #2196F3;
-}
+
 
 /* Portfolio*/
 
@@ -160,15 +205,27 @@
 
 }
 
+.portfolio-list{
+    margin-right: 50px;
+    display: flex;
+}
+
 .portfolio-item{
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
 
     color: #212121;
 }
+
+.projects-list{
+    background: #E5E5E5;
+}
+
 .projects-desc{
     font-family: Roboto;
     font-style: normal;
