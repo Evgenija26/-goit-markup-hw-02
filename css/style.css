@@ -1,14 +1,16 @@
+.r
+
 .body{
     position: relative;
-    width: 1600px;
-    height: 2349px;
+
+
     
     background: #FFFFFF;
 }
 
 /* Header*/
 
-.top-line-container{
+.header-container{
     align-items: center;
     display: flex;
     width: 1600px;
@@ -19,16 +21,27 @@
     background: #FFFFFF;
 }
 
-.nav{
+.nav-list{ 
     display: flex;
-}
+    width: 294px;
+    height: 16px;
+    left: 453px;
+    top: 32px;
+
+    position: absolute;
+    width: 294px;
+    height: 16px;
+    left: 453px;
+    top: 32px;
+
+} 
 
 .logo-top-line{
     margin-left: 215px;
 }
-
+/* WebStudio */
 .logo{
-
+    box-sizing: border-box;
     width: 145px;
     height: 31px;
     left: 215px;
@@ -47,13 +60,89 @@
     color: #2196F3;
 }
 
-.top-line-list-container{ 
+/* menu nav*/
+
+.nav{
     display: flex;
-    width: 294px;
+    
+}
+.studio{
+    position: absolute;
+    width: 49px;
     height: 16px;
     left: 453px;
     top: 32px;
 
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+
+    color: #2196F3;
+}
+
+.portfolio{
+    position: absolute;
+    width: 77px;
+    height: 16px;
+    left: 552px;
+    top: 32px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+
+    color: #212121;
+}
+
+.contakt{
+    position: absolute;
+    width: 68px;
+    height: 16px;
+    left: 679px;
+    top: 32px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+
+    color: #212121;
+}
+
+/* телефон в шапке*/
+.tel{
+    position: absolute;
+    width: 142px;
+    height: 16px;
+    left: 1243px;
+    top: 32px;
+}
+
+/* e-mail в шапке*/
+
+.e-mail{
+    position: absolute;
+    width: 135px;
+    height: 16px;
+    left: 1078px;
+    top: 32px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+
+    color: #2196F3;
 }
 
 .top-line-list{
@@ -249,31 +338,45 @@
 }
 
 .footer{
-    position: absolute;
+
     width: 1600px;
     height: 252px;
-
+    left: 0px;
+    top: 1628px;
+    
     background: #2F303A;
 }
+
+.footer-list-container{
+    
+    width: 231px;
+    height: 81px;
+    left: 215px;
+    top: 1739px;
+
+}
+
 .address{
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 1.71;
-
+    
     letter-spacing: 0.03em;
+    
     color: #FFFFFF;
     }
 
 .footer-item{
     font-family: Roboto;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
 
     letter-spacing: 0.03em;
+
     color: rgba(255, 255, 255, 0.6);
 
 }
