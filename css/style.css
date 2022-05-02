@@ -179,7 +179,8 @@
     color:var(--main-txt-cl);
 }
 
-.header-wrapper-item{
+.header-wrapper-item,
+.top-line-item2{
     display: flex;
     font-family: var(--main-font);
     font-style: normal;
