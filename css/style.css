@@ -76,6 +76,7 @@
     color: #FFFFFF;
 }
 .web{
+    font-family: var(--secondary-font);
     color:var(--accent-cl);
 }
 
@@ -165,7 +166,7 @@
     color: var(--accent-cl);
 }
 
-.top-line-list{
+.nav-item{
     margin-right: 50px;
     display: flex;
     font-family: Roboto;
@@ -178,7 +179,7 @@
     color:var(--main-txt-cl);
 }
 
-.top-line-list2{
+.header-wrapper-item{
     display: flex;
     font-family: var(--main-font);
     font-style: normal;
@@ -188,6 +189,10 @@
     letter-spacing: 0.02em;
     
     color: var(--secondary-txt-cl);
+}
+
+.header-wrapper-item :hover{
+    color:var(--accent-cl)
 }
 
 .top-line-list2 :hover{
@@ -300,7 +305,7 @@
     background: var(--secondary-bg-cl);
 }
 
-.top-line-item{
+.top-line-item {
     font-family: var(--main-font);
     font-style: normal;
     font-weight: 500;
