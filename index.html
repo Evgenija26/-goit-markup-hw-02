@@ -5,17 +5,17 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-        <!--Нормализация стилей-->
+                <!--Нормализация стилей-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.min.css@8.0.1/normalize.min.css">
-
-            <!-- Основные шрифты -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
+                <!-- Основные шрифты -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-                    <!-- Кастомные стили-->
+                <!-- Кастомные стили-->
         <link rel="stylesheet" href="./css/style.css">
         <style>
             a{ text-decoration: none; }
@@ -29,8 +29,9 @@
          <body>
             <!-- Header-->
             <header class="header">
-                <div class="header-container">
+                <div class="header-container container">
                     <!--WebStudio-->
+                    <div class="header-nav">
                         <a href="WebStudio" class="logo logo-top-line"><span class="web">Web</span>Studio</a>
                         <nav class="nav">
                             <ul class="nav-list list">
@@ -39,22 +40,24 @@
                                 <li class="nav-item"><a class="nav-link link" href="Контакты">Контакты</a></li>
                             </ul>
                         </nav>
+                    </div>
                     <div class="header-wrapper">
                         <ul class="header-wrapper-list">
-                            <li class="header-wrapper-item"><a href="mailto:info@devstudio.com" title="info@devstudio.com"><span class="e-mail">info@devstudio.com</span></a></li>
-                            <li class="header-wrapper-item"><a href="tel:+380961111111" title="+380961111111"><span class="tel">+380961111111</span></a></li>  
+                            <li class="header-wrapper-item"><a href="mailto:info@devstudio.com" title="info@devstudio.com">
+                                <span class="e-mail">info@devstudio.com</span></a></li>
+                            <li class="header-wrapper-item"><a href="tel:+380961111111" title="+380961111111">
+                                <span class="tel">+380961111111</span></a></li>  
                         </ul>
                     </div>
                 </div>
             </header>
             <main>
-                
-                <div class="">
-                    <!-- Hero -->
+                  <!-- Hero -->
+                <div class="main-container container">
                     <section class="hero"> 
                         <div class="hero-container">
                             <h1 class="hero-title">ЭФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-                            <button class="hero-button">Заказать услугу</button>
+                            <button class="hero-button"><span class="hero-btn">Заказать услугу</span></button>
                         </div>
                     </section>
                     <!-- About us -->
@@ -91,7 +94,7 @@
                             </ul>
                         </div>
                     </section>
-                    <!-- Team-->
+                    <!-- Team -->
                     <section class="team-section">
                         <div class="team-container">
                             <h2 class="team-title">Наша команда</h2>
@@ -105,13 +108,14 @@
                     </section>
                 </div>
             </main>
+                    <!-- Footer -->
             <footer class="footer">
-                <div class="footer-container">
+                <div class="footer-container container">
                     <!-- WebStudio -->
                     <a href="WebStudio" class="logo logo-footer"><span class="web">Web</span>Studio</a>
-                    <div class=" footer-list-container"></div>
-                        <address class="address">г. Киев, пр-т Леси Украинки, 26</address>
+                    <div class=" footer-list-container"> 
                         <ul class="footer-list">
+                            <li class="footer-item"><address class="address">г. Киев, пр-т Леси Украинки, 26</address></li>
                             <li class="footer-item"><a href="mailto:info@devstudio.com" color="mailto:info@devstudio.com">info@devstudio.com</a></li>
                             <li class="footer-item"><a href="tel:+380961111111" color="tel:+380961111111">+380961111111</a></li>
                         </ul>
