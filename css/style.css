@@ -24,7 +24,7 @@ h2,
 h3,
 h4,
 p,
-ul[class],
+ul,
 ol[class],
 li{
     margin: 0;
@@ -52,7 +52,9 @@ li{
 }
 
 .container{
-    width: 1600px;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
     
 }
 
@@ -60,42 +62,43 @@ li{
       /* Header*/
 /*============================*/
 
+.header,
+.top-line{
+border: 1px solid #ECECEC;
+}
+
 .header-container,
 .top-line-container{
     align-items: center;
     display: flex;
-    width: 1600px;
-    height: 80px;
-    left: 0px;
-    top: 0px; 
 
     background: var(--main-bg-cl);
-}
-
-.header-nav{
-    display: flex;
 }
 
 /*============================*/
         /* WebStudio */
  /*============================*/
 
+.logo-top-line{
+    display: block;
+    margin-left: 215px;
+    margin-right: 93px;
+}
+
 .logo{
     box-sizing: border-box;
-    width: 145px;
-    height: 31px;
     font-family: var(--secondary-font);
     font-size: 26px;
     line-height: 1.19;
 
     padding: 0;
-    margin-left: 215px;
-    margin-top: 24px;
-    
+
     color: var(--main-txt-cl);
 }
 
 .logo-footer{
+    display: block;
+    padding-top: 60px;
     color: #FFFFFF;
 }
 .web{
@@ -107,28 +110,20 @@ li{
        /* menu nav*/
  /*============================*/
 
+.nav{
+    display: flex;
+    align-items: baseline;
+    margin: 0px;
+}
+
 .nav-list,
 .top-line-list{ 
     display: flex;
-    width: 294px;
-    height: 16px;
-    margin-left: 453px;
-    margin-top: 32px;
-    justify-content: space-around;
-text-align: center;
 
+    justify-content: space-evenly;
+    text-align: center;
 
 } 
-
-/*.nav{
-    display: flex;
-   
-    width: 294px;
-    height: 16px;
-    margin-left: 93px;
-    margin-top: 24px;
-    
-}*/
 
 .nav-item,
 .top-line-item {
@@ -138,10 +133,28 @@ text-align: center;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
+    padding: 30px 0;
+
+    margin-right: 50px;
 
 }
-/*
-.studio{
+
+.header-wrapper-list{
+    display: flex;
+    flex-wrap: nowrap;
+    
+    margin-left: auto;
+}
+
+.header-wrapper-item{
+    margin-right: 50px;
+}
+
+.header-wrapper-item :last-child{
+    margin-right: 0px;
+}
+
+/* .studio{
     position: absolute;
     width: 49px;
     height: 16px;
@@ -190,30 +203,18 @@ text-align: center;
     letter-spacing: 0.02em;
 
     color:var(--main-txt-cl);
-}*/
-
-/*============================*/
+} */
+/* 
+============================*/
      /* телефон в шапке*/ 
 /*============================*/
 
-.tel{
-    position: absolute;
-    width: 142px;
-    height: 16px;
-    left: 1243px;
-    top: 32px;
-}
 
 /*============================*/
      /* e-mail в шапке*/ 
 /*============================*/
 
 .e-mail{
-    position: absolute;
-    width: 135px;
-    height: 16px;
-    left: 1078px;
-    top: 32px;
 
     font-family: var(--main-font);
     font-style: normal;
@@ -225,17 +226,9 @@ text-align: center;
     color: var(--accent-cl);
 }
 
-
-
-
-
 .header-wrapper-item :hover{
     color:var(--accent-cl)
 }
-
-.top-line-list2 :hover{
-    color:var(--accent-cl);
-} 
 
 /*============================*/
         /* hero*/
@@ -243,12 +236,13 @@ text-align: center;
 
 .main-container{
     width: 1600px;
+    margin: 0px auto;
+    padding: 0 15px;
 }
 
 .hero{
     background-color: var(--dark-bg-cl);
-    width: 1600px;
-    height: 600px;
+
 }
 
 .hero-title{
@@ -271,34 +265,29 @@ text-align: center;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    display: flex;
+
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
     background-color: var(--accent-cl);
+
     margin: 30px 700px 200px 700px;
+
     width: 200px;
     height: 50px;
+
     
     color:var(--main-bg-cl);
 }
 
 .hero-btn{
-    padding: 10px 32px 10px 32px;
-    position: absolute;
-    width: 136px;
-    height: 30px;
-    left: 732px;
-    top: 440px;
 
-    
     font-family: var(--main-font);
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
     
-    display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
@@ -323,6 +312,13 @@ text-align: center;
 
 .about-us-list{
     display: flex;
+/* 
+    position: absolute;
+    width: 1170px;
+    height: 101px;
+    left: 215px;
+    top: 774px; */
+    margin: 94px 215px 0;
 
 }
 
@@ -334,11 +330,25 @@ text-align: center;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--secondary-txt-cl);
+    margin-right: 30px;
+}
+
+.about-us-desc :last-child{
+    margin-right: 0px;
 }
 
 /*============================*/
     /* our work */
 /*============================*/
+
+.our-work-container{
+
+    width: 1170px;
+    height: 386px;
+    margin-right: 215px;
+    margin-left: 215px;
+    top: 969px;
+}
 
 .our-work-title{
     font-family:var(--main-font);
@@ -349,6 +359,7 @@ text-align: center;
     text-align: center;
     letter-spacing: 0.03em;
     color:var(--main-txt-cl);
+    margin-top: 94px;
 
    /* position: absolute;
     width: 376px;
@@ -360,13 +371,13 @@ text-align: center;
 .our-work-list{
     display: flex;
 
-    padding-right: 15px;
-    padding-left: 15px; 
-    width: 1170px;
-    height: 386px;
-    left: 215px;
-    margin-right: 0px;
+    margin-right: 30px;
+    margin-top: 50px;
 
+}
+
+.our-work-list :last-child{
+    margin-right: 0px;
 }
 
 .our-work-item{
@@ -379,11 +390,7 @@ text-align: center;
 /*============================*/
 
 .team-container{
-    width: 1600px;
-    height: 648px;
-    left: 0px;
-    top: 1449px;
-    
+
     background: #F5F4FA;
 }
 
@@ -392,12 +399,13 @@ text-align: center;
     font-family:var(--main-font);
     font-style: normal;
     font-weight: bold;
-    font-size: 36px;
+
     line-height: 1.17;
+
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-txt-cl);
-    margin: 94px 668px 512px 668px;
+    margin: 94px 668px 50px 668px;
 
     width: 264px;
     height: 42px;
@@ -406,6 +414,15 @@ text-align: center;
 
 .team-list{
     display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+
+    margin-left: 215px;
+    margin-right: 215px;
+}
+
+.team-item{
+    margin-right: 30px;
 }
 
 .team-desc{
@@ -456,8 +473,9 @@ text-align: center;
     text-align: center;
     letter-spacing: 0.03em;
     margin-right: 8px;
-
+    padding: 6px 22px;
     color: var(--main-txt-cl);
+
 }
 
 .portfolio-item :last-child{
@@ -473,8 +491,14 @@ text-align: center;
     margin-right: auto;
     margin-left: auto;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    width: 1179px;
+    height: 1360px;
+}
 
+.projects-item{
+    margin-top: 20px;
+    margin-right: 20px;
 }
 
 .projects-desc{
@@ -503,22 +527,19 @@ text-align: center;
     /* Footer */
 /*============================*/
 
-.footer{
+/* .logo-footer{
+    margin-right: 215px;
+    margin-top: 60px;
+} */
 
-    width: 1600px;
-    height: 252px;
-    left: 0px;
-    top: 1628px;
-    
+.footer{
     background: #2F303A;
 }
 
 .footer-list-container{
-    
-    width: 231px;
-    height: 81px;
-    left: 215px;
-    top: 1739px;
+    margin-right: 215px;
+    margin-top: 20px;
+   padding-bottom: 60px;
 
 }
 
