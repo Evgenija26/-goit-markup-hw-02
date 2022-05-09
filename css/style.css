@@ -81,7 +81,7 @@ border: 1px solid #ECECEC;
 
 .logo-top-line{
     display: block;
-    margin-left: 215px;
+
     margin-right: 93px;
 }
 
@@ -113,7 +113,6 @@ border: 1px solid #ECECEC;
 .nav{
     display: flex;
     align-items: baseline;
-    margin: 0px;
 }
 
 .nav-list,
@@ -124,6 +123,9 @@ border: 1px solid #ECECEC;
     text-align: center;
 
 } 
+.nav-list{
+    margin-right: auto;
+}
 
 .nav-item,
 .top-line-item {
@@ -139,21 +141,7 @@ border: 1px solid #ECECEC;
 
 }
 
-.header-wrapper-list{
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: flex-end;
-    
-    margin-right: auto;
-}
 
-.header-wrapper-item{
-    margin-right: 50px;
-}
-
-.header-wrapper-item :last-child{
-    margin-right: 0px;
-}
 
 .studio{
     /* position: absolute;
@@ -206,18 +194,53 @@ border: 1px solid #ECECEC;
     color:var(--main-txt-cl);
 }
 
-/* 
-============================*/
-     /* телефон в шапке*/ 
-/*============================*/
+/*================================*/
+     /* телефон, e-mail в шапке*/ 
+/*================================*/
 
 
-/*============================*/
-     /* e-mail в шапке*/ 
-/*============================*/
+.header-wrapper-list{
+    display: block;
+    display: flex;
+    margin-left: auto;
+
+}
+
+.header-wrapper-item{
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.header-wrapper-item :last-child{
+    margin-right: 0px;
+}
+
+.tel{
+    display: block;
+    
+    /* position: absolute; */
+    width: 122px;
+    height: 16px;
+    margin-right: 1263px;
+    margin-top: 32px;
+    
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    
+    color: #757575;
+}
 
 .e-mail{
-
+    /* position: absolute; */
+    width: 135px;
+    height: 16px;
+    margin-right: 1078px;
+    margin-top: 32px;
+     
     font-family: var(--main-font);
     font-style: normal;
     font-weight: 500;
@@ -237,7 +260,7 @@ border: 1px solid #ECECEC;
 /*============================*/
 
 .main-container{
-    width: 1600px;
+
     margin: 0px auto;
     padding: 0 15px;
 }
@@ -255,13 +278,13 @@ border: 1px solid #ECECEC;
     line-height: 1.36;
     display: block;
     text-align: center;
-    padding: 200px 452px 0px 452px;
-
+    padding: 0 200px 0 200px;
     
     color:var(--main-bg-cl);
 }
+
 .hero-button{
-    
+    display: block;
     font-family: var(--main-font);
     font-style: normal;
     font-weight: 700;
@@ -273,7 +296,10 @@ border: 1px solid #ECECEC;
     letter-spacing: 0.06em;
     background-color: var(--accent-cl);
 
-    margin: 30px 700px 200px 700px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+
 
     width: 200px;
     height: 50px;
@@ -300,6 +326,17 @@ border: 1px solid #ECECEC;
 /*============================*/
        /* About us*/
 /*============================*/
+.about-us-list{
+    display: flex;
+/* 
+    position: absolute;
+    width: 1170px;
+    height: 101px;
+    left: 215px;
+    top: 774px; */
+    margin-top: 94px;
+
+}
 
 .about-us-subtitle{
     font-family:var(--main-font);
@@ -310,18 +347,11 @@ border: 1px solid #ECECEC;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--main-txt-cl);
+    margin-right: 30px;
 }
 
-.about-us-list{
-    display: flex;
-/* 
-    position: absolute;
-    width: 1170px;
-    height: 101px;
-    left: 215px;
-    top: 774px; */
-    margin: 94px 215px 0;
-
+.about-us-subtitle :last-child{
+    margin-right: 0px;
 }
 
 .about-us-desc{
@@ -333,6 +363,7 @@ border: 1px solid #ECECEC;
     letter-spacing: 0.03em;
     color: var(--secondary-txt-cl);
     margin-right: 30px;
+    margin-top: 10px;
 }
 
 .about-us-desc :last-child{
@@ -345,11 +376,9 @@ border: 1px solid #ECECEC;
 
 .our-work-container{
 
-    width: 1170px;
-    height: 386px;
-    margin-right: 215px;
-    margin-left: 215px;
-    top: 969px;
+    margin-right: auto;
+    margin-left: auto;
+
 }
 
 .our-work-title{
@@ -373,7 +402,6 @@ border: 1px solid #ECECEC;
 .our-work-list{
     display: flex;
 
-    margin-right: 30px;
     margin-top: 50px;
 
 }
@@ -391,7 +419,7 @@ border: 1px solid #ECECEC;
     /* Team */
 /*============================*/
 
-.team-container{
+.team-section{
 
     background: #F5F4FA;
 }
@@ -407,7 +435,7 @@ border: 1px solid #ECECEC;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-txt-cl);
-    margin: 94px 668px 50px 668px;
+    margin: 94px auto 0;
 
     width: 264px;
     height: 42px;
@@ -416,15 +444,16 @@ border: 1px solid #ECECEC;
 
 .team-list{
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-
-    margin-left: 215px;
     margin-right: 215px;
 }
 
 .team-item{
     margin-right: 30px;
+    margin-top: 50px;
+}
+
+.team-item :last-child{
+    margin-right: 0;
 }
 
 .team-desc{
@@ -437,6 +466,7 @@ border: 1px solid #ECECEC;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-txt-cl);
+    margin-top: 30px;
 }
 
 .team-text{
@@ -448,14 +478,17 @@ border: 1px solid #ECECEC;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--secondary-txt-cl);
+
+    margin-top: 10px;
+    padding-bottom: 30px;
 }
 
 /*============================*/
     /* Portfolio*/ 
 /*============================*/
 
-.body-portfolio{
-    background: var(--secondary-bg-cl);
+.portfolio-section{
+    background: var(--main-bg-cl);
 }
 
 .portfolio-list{
@@ -489,19 +522,26 @@ border: 1px solid #ECECEC;
     /*Projects*/
 /*============================*/
 
+.portfolio-container{
+    padding-bottom: 94px;
+}
+
 .projects-list{
-    background: #E5E5E5;
     margin-right: auto;
     margin-left: auto;
     display: flex;
     flex-wrap: wrap;
-    width: 1179px;
-    height: 1360px;
+
+ border: 1px solid #EEEEEE;
 }
 
 .projects-item{
     margin-top: 20px;
-    margin-right: 20px;
+    margin-right: auto;
+}
+
+.projects-item :last-child{
+    margin-right: 0px;
 }
 
 .projects-desc{
@@ -513,9 +553,12 @@ border: 1px solid #ECECEC;
 
     letter-spacing: 0.06em;
     color:var(--main-txt-cl);
+
+    margin-top: 20px;
 }
 
 .projects-tagline{
+    display: block;
     font-family:var(--main-font);
     font-style: normal;
     font-weight: normal;
@@ -524,6 +567,8 @@ border: 1px solid #ECECEC;
 
     letter-spacing: 0.03em;
     color:var(--secondary-txt-cl);
+
+    margin-top: 4px;
 }
 
 /*============================*/
