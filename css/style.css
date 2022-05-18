@@ -251,6 +251,10 @@ border: 1px solid #ECECEC;
     color: var(--accent-cl);
 }
 
+.studio-icon{
+    color: #212121;
+}
+
 .header-wrapper-item :hover{
     color:var(--accent-cl)
 }
@@ -266,7 +270,29 @@ border: 1px solid #ECECEC;
 }
 
 .hero{
-    background-color: var(--dark-bg-cl);
+    /* max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: -o-linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
+    url(../image/background.jpg/bg-hero.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: #111319; */
+    /* Фонове зображення + градієнт */
+    background-image: url(../image/background.jpg/bg-hero.png),
+    linear-gradient(to bottom, #191c26, #191c26);
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    background-size: cover;
 
 }
 
@@ -278,7 +304,9 @@ border: 1px solid #ECECEC;
     line-height: 1.36;
     display: block;
     text-align: center;
-    padding: 0 200px 0 200px;
+    align-items: center;
+    padding: 200px 200px 0 200px;
+    
     
     color:var(--main-bg-cl);
 }
@@ -299,6 +327,7 @@ border: 1px solid #ECECEC;
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 200px;
 
 
     width: 200px;
@@ -338,6 +367,13 @@ border: 1px solid #ECECEC;
 
 }
 
+.about-us-icon{
+    width: 270px;
+    height: 120px;
+    background: #F5F4FA;
+    border-radius: 4px;
+}
+
 .about-us-subtitle{
     font-family:var(--main-font);
     font-style: normal;
@@ -348,6 +384,7 @@ border: 1px solid #ECECEC;
     text-transform: uppercase;
     color: var(--main-txt-cl);
     margin-right: 30px;
+    margin-top: 30px;
 }
 
 .about-us-subtitle :last-child{
@@ -584,7 +621,12 @@ border: 1px solid #ECECEC;
     background: #2F303A;
 }
 
+.footer-container{
+    display: flex;
+}
+
 .footer-list-container{
+    
     margin-right: 215px;
     margin-top: 20px;
    padding-bottom: 60px;
@@ -614,4 +656,37 @@ border: 1px solid #ECECEC;
 
     color: rgba(255, 255, 255, 0.6);
 
+}
+/* Social icons */
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.socials-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 44px;
+    height: 44px;
+
+    background-color: #ffffff;
+    color: #303030;
+
+    border-radius: 50%;
+}
+
+.socials-link:hover,
+.socials-link:focus {
+    color: var(--accent-cl);
+}
+
+.socials-icon {
+    fill: currentColor;
 }
