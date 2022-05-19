@@ -16,7 +16,7 @@
 /* grid items */
 .grid{
 --items: 1;
---indent: 30px;
+--indent: 15px;
 }
 
 /* Плавниий скролінг до секції */
@@ -161,6 +161,11 @@ border: 1px solid #ECECEC;
     text-align: center;
 
 } 
+
+.nav-link ::before{
+    
+}
+
 .nav-list{
     margin-right: auto;
 }
@@ -697,19 +702,23 @@ border: 1px solid #ECECEC;
 
 .clients-list{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .clients-item{
     width: 170px;
     height: 92px;
-    margin-right: 30px;
+    margin: 15px;
     
     border: 1px solid #AFB1B8;
     border-radius: 4px;
 }
 
-..clients-item :last-child{
+.clients-item{
+    --items: 5;
+}
+
+.clients-item :last-child{
     margin-right: 0px;
 }
 
@@ -767,7 +776,9 @@ border: 1px solid #ECECEC;
     color: rgba(255, 255, 255, 0.6);
 
 }
+
 /* Social icons */
+
 .socials {
     display: flex;
     justify-content: center;
