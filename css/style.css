@@ -60,7 +60,6 @@ li{
 .grid {
     display: flex;
     flex-wrap: wrap;
-
     gap: var(--indent);
 }
 
@@ -78,15 +77,6 @@ li{
     color: var(--main-txt-cl);
    
     background: var(--main-bg-cl);
-}
-
-.link {
-    text-decoration: none;
-    color: currentColor;
-}
-
-.list {
-    list-style: none;
 }
 
 .container{
@@ -153,8 +143,7 @@ border: 1px solid #ECECEC;
     align-items: baseline;
 }
 
-.nav-list,
-.top-line-list{ 
+.nav-list{ 
     display: flex;
 
     justify-content: space-evenly;
@@ -162,8 +151,9 @@ border: 1px solid #ECECEC;
 
 } 
 
-.nav-link ::before{
-    
+.nav-link {
+    position: relative;
+    color: var(--secondary-txt-cl);
 }
 
 .nav-list{
@@ -175,14 +165,24 @@ border: 1px solid #ECECEC;
     color: var(--accent-cl);
 }
 
-.nav-link.current::after {
+.nav-link:after {
+    display: block;
     position: absolute;
-    bottom: 0;
     left: 0;
+    width: 0;
+    height: 4px;
+    background-color: var(--accent-cl);
+    
+    content: "";
+    transition: width 0.3s ease-out;
 }
 
-.nav-item,
-.top-line-item {
+.nav-item:hover:after,
+.nav-item:focus:after {
+    width: 100%;
+}
+
+.nav-item{
     font-family: var(--main-font);
     font-style: normal;
     font-weight: 500;
@@ -194,8 +194,6 @@ border: 1px solid #ECECEC;
     margin-right: 50px;
 
 }
-
-
 
 .studio{
     /* position: absolute;
@@ -252,7 +250,6 @@ border: 1px solid #ECECEC;
      /* телефон, e-mail в шапке*/ 
 /*================================*/
 
-
 .header-wrapper-list{
     display: block;
     display: flex;
@@ -264,10 +261,10 @@ border: 1px solid #ECECEC;
     display: inline-block;
     margin-right: 50px;
 }
-
+/* 
 .header-wrapper-item :last-child{
     margin-right: 0px;
-}
+} */
 
 .tel{
     display: block;
@@ -309,6 +306,11 @@ border: 1px solid #ECECEC;
     color: #212121;
 }
 
+.studio-icon {
+    fill: currentColor;
+    margin-right: 10px;
+}
+
 .header-wrapper-item :hover{
     color:var(--accent-cl)
 }
@@ -324,22 +326,11 @@ border: 1px solid #ECECEC;
 }
 
 .hero{
-    /* max-width: 1600px;
-    height: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: -o-linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
-    url(../image/background.jpg/bg-hero.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover; */
-
     max-width: 1600px;
     height: 600px;
     margin-left: auto;
     margin-right: auto;
-    /* background-color: #111319; */
-    /* Фонове зображення + градієнт */
+
     background-image: url(../image/background.jpg/bg-hero.png),
     linear-gradient(to bottom, #191c26, #191c26);
     
@@ -483,11 +474,6 @@ border: 1px solid #ECECEC;
     color:var(--main-txt-cl);
     margin-top: 94px;
 
-   /* position: absolute;
-    width: 376px;
-    height: 42px;
-    left: 612px;
-    top: 969px;*/
 }
 
 .our-work-list{
@@ -511,7 +497,6 @@ border: 1px solid #ECECEC;
 /*============================*/
 
 .team-section{
-
     background: #F5F4FA;
 }
 
@@ -579,7 +564,6 @@ border: 1px solid #ECECEC;
     color: var(--secondary-txt-cl);
 
     margin-top: 10px;
-    padding-bottom: 30px;
 }
 
 /*============================*/
@@ -588,6 +572,10 @@ border: 1px solid #ECECEC;
 
 .portfolio-section{
     background: var(--main-bg-cl);
+}
+
+.portfolio-container{
+    padding-bottom: 94px;
 }
 
 .portfolio-list{
@@ -607,7 +595,7 @@ border: 1px solid #ECECEC;
     text-align: center;
     letter-spacing: 0.03em;
     margin-right: 8px;
-    margin-bottom: 50px;
+    margin-bottom: 12px;
     padding: 6px 22px;
     color: var(--main-txt-cl);
 
@@ -621,10 +609,6 @@ border: 1px solid #ECECEC;
     /*Projects*/
 /*============================*/
 
-.portfolio-container{
-    padding-bottom: 94px;
-}
-
 .projects-list{
     margin-right: auto;
     margin-left: auto;
@@ -637,6 +621,11 @@ border: 1px solid #ECECEC;
 .projects-item{
     margin-top: 20px;
     margin-right: auto;
+
+}
+
+.projects-item{
+    --items: 9;
 }
 
 .projects-item :hover,
@@ -703,15 +692,20 @@ border: 1px solid #ECECEC;
 .clients-list{
     display: flex;
     flex-wrap: nowrap;
+
 }
 
-.clients-item{
+.clients-item{ 
+    box-sizing: border-box;
+
     width: 170px;
     height: 92px;
     margin: 15px;
     
     border: 1px solid #AFB1B8;
     border-radius: 4px;
+
+    align-self: center;
 }
 
 .clients-item{
@@ -721,6 +715,10 @@ border: 1px solid #ECECEC;
 .clients-item :last-child{
     margin-right: 0px;
 }
+.client{
+    margin-right: 0px;
+}
+
 
 /*============================*/
     /* Footer */
@@ -787,7 +785,7 @@ border: 1px solid #ECECEC;
 }
 
 .socials-list{
-    margin-top: 20ox;
+    margin-top: 20px;
 }
 
 .socials-item:not(:last-child) {
@@ -808,13 +806,32 @@ border: 1px solid #ECECEC;
     border-radius: 50%;
 }
 
-.socials-link:hover,
-.socials-link:focus {
-    color: var(--accent-cl);
+.contact-link {
+    color: #AFB1B8;
 }
+
 
 .socials-icon {
     fill: currentColor;
 }
 
+.contact-link:hover,
+.contact-link:focus,
+.socials-link:hover,
+.socials-link:focus {
+    color: var(--main-bg-cl);
+    background-color: var(--accent-cl);
+}
 
+
+/* .nav-list.current::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #ff6c00;
+} */
